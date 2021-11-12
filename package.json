@@ -2,10 +2,14 @@
   "name": "@taaesan-lab/common",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "build/**/*"
+  ],
   "scripts": {
-    "build": "npm run clean && tsc",
-    "clean": "del ./build/*"
+    "clean": "del ./build/*",
+    "build": "npm run clean && tsc"
   },
   "keywords": [],
   "author": "",
